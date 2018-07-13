@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restfull Api Upload & Download</title>
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <noscript>
+        <!--jika noscript-->
+        <h2>Sorry browser anda tidak support JavaScript harap ganti browser anda !</h2>
+    </noscript>
+    <div class="upload-container">
+        <div class="upload-header">
+            <h3>Restfull Api Upload & Download</h3>
+        </div>
+        <div class="upload-content">
+            <!--single upload-->
+            <div class="single-upload">
+                <h3>Single Upload</h3>
+                <form id="singleUploadForm" name="singleUploadForm">
+                    <input id="singleFileUploadInput" name="file" class="file-input" type="file" required="">
+                    <button type="submit" class="primary submit-btn">Submit</button>
+                </form>
+                <div class="upload-response">
+                    <div id="singleFileUploadError"></div>
+                    <div id="singleFileUploadSuccess"></div>
+                </div>
+            </div>
+            <!--multifile upload-->
+            <div class="multiple-upload">
+                <h3>Upload Multiple Files</h3>
+                <form id="multipleUploadForm" name="multipleUploadForm">
+                    <input id="multipleFileUploadInput" type="file" name="files" class="file-input" multiple required />
+                    <button type="submit" class="primary submit-btn">Submit</button>
+                </form>
+                <div class="upload-response">
+                    <div id="multipleFileUploadError"></div>
+                    <div id="multipleFileUploadSuccess"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

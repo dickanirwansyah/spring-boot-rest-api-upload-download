@@ -39,8 +39,8 @@ public class ControllerDBFile {
     }
 
 
-    @PostMapping(value = "/multiUploadFile")
-    public List<UploadFileResponse> multiUploadFile(@RequestParam("file")MultipartFile[] files){
+    @PostMapping(value = "/uploadMultipleFiles")
+    public List<UploadFileResponse> multiUploadFile(@RequestParam("files")MultipartFile[] files){
         return Arrays.asList(files)
                 .stream()
                 .map(file -> uploadFile(file))
